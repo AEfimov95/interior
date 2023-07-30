@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0px;
+  background: #ccc;
+  user-select: none;
+
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+    color: #fff;
+  }
+  &__buttons {
+    display: flex;
+    gap: 0 32px;
+
+    button {
+      background: inherit;
+      border: none;
+      font-size: 16px;
+      color: #fff;
+      padding: 0;
+    }
+
+    &-mobile {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  .header {
+    padding: 48px 16px 16px;
+
+    h1 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__buttons {
+      button {
+
+        span {
+          display: none;
+        }
+      }
+
+      &-mobile {
+        display: flex;
+        height: fit-content;
+        width: fit-content;
+      }
+    }
+  }
+}

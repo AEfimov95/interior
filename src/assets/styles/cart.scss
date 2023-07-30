@@ -1,0 +1,231 @@
+.cart-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 0 32px;
+  flex-wrap: wrap;
+}
+
+.position {
+  border-top: 1px solid #cacdd8;
+  padding: 32px 0;
+  display: flex;
+  gap: 0 32px;
+
+  img {
+    width: 173px;
+    height: 173px;
+  }
+  &-wrapper {
+    flex: 1;
+    min-width: 600px;
+  }
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 3px;
+    margin-bottom: 14px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+
+    h2 {
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 500;
+    }
+
+    p {
+      color: #888;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+      max-width: 276px;
+    }
+
+    h3 {
+      color: #050505;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      user-select: none;
+    }
+
+    &-buttons {
+      display: flex;
+      gap: 0 30px;
+
+      button {
+        border: 0;
+        background: inherit;
+        font-size: 14px;
+        line-height: 210%;
+        text-decoration-line: underline;
+        padding: 0 0;
+      }
+    }
+  }
+  &__counter {
+    width: 71px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background: #f7f6f6;
+    color: var(--color-7, #000);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 210%;
+    padding: 9px 14px 9px 0;
+    margin-left: auto;
+    user-select: none;
+
+    p {
+      width: 41px;
+      height: 27px;
+      text-align: center;
+    }
+
+    &-chevron {
+      display: flex;
+      align-items: center;
+      height: 16px;
+      cursor: pointer;
+    }
+  }
+  &__activeBtn {
+    display: flex;
+    margin: 50px 0 64px;
+    gap: 0 7px;
+
+    button {
+      border-radius: 50px;
+      border: 1px solid #000;
+      padding: 10px;
+      width: 200px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+    }
+    &-remove {
+      color: #020202;
+    }
+    &-continue {
+      background: var(--color-7, #000);
+      color: white;
+    }
+  }
+}
+
+.order {
+  width: 379px;
+  height: 556px;
+  border-radius: 20px;
+  background: #f7f6f6;
+  padding-top: 42px;
+
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+
+    input {
+      width: 288px;
+      border: 0;
+      border-bottom: 1px solid #cacdd8;
+      background: inherit;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0 0 40px 28px;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 24px;
+
+      span {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+    button {
+      border-radius: 20px;
+      border: 1px solid #040404;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 10px 0;
+      margin: 18px 45px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .position {
+    img {
+      display: none;
+    }
+    &-wrapper {
+      min-width: 300px;
+    }
+    &-header {
+        display: none;
+      }
+    &__info {
+      h2 {
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      p {
+        color: #888;
+        font-size: 12px;
+        line-height: 15px;
+        max-width: 253px;
+      }
+
+      h3 {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    &__activeBtn {
+        display: flex;
+        margin: 0 0 48px;
+        gap: 0 14px;
+    
+        button {
+          border-radius: 50px;
+          border: 1px solid #000;
+          padding: 11px;
+          width: 166px;
+          font-size: 12px;
+          line-height: 15px;
+        }
+        &-remove {
+          color: #020202;
+        }
+        &-continue {
+          background: var(--color-7, #000);
+          color: white;
+        }
+      }
+  }
+}

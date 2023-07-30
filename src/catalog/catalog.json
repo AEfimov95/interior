@@ -1,0 +1,10 @@
+{
+  "catalog": [
+    { "id": 0, "img": "/assets/img/askesta.jpg", "name": "Диван ASKESTA", "description": "Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.", "price": 68000, "count": 0 },
+    { "id": 1, "img": "/assets/img/lunar.jpg", "name": "Кресло LUNAR", "description": "Прекрасно переносит солнечные лучи, перепады влажности и любые осадки", "price": 40000, "count": 0 },
+    { "id": 2, "img": "/assets/img/menu.jpg", "name": "Стол MENU", "description": "Европейский дуб - отличается особой прочностью и стабильностью.", "price": 34000, "count": 0 },
+    { "id": 3, "img": "/assets/img/nastan.jpg", "name": "Шкаф Nastan", "description": "Мебель может быть оснащена разнообразными системами подсветки.", "price": 80000, "count": 0 },
+    { "id": 4, "img": "/assets/img/tatran.jpg", "name": "Кровать TATRAN", "description": "Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.", "price": 120000, "count": 0 },
+    { "id": 5, "img": "/assets/img/vilora.jpg", "name": "Кресло VILORA", "description": "Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань. ", "price": 21000, "count": 0 }
+  ]
+}
