@@ -19,8 +19,8 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<CatalogView/>}/>
-            <Route path="/cart" element={<CartView/>}/>
+            <Route path="/interior" element={<CatalogView/>}/>
+            <Route path="/interior/cart" element={<CartView/>}/>
           </Routes>
         </main>
       </Context.Provider>

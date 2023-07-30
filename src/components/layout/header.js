@@ -6,10 +6,10 @@ import { CartIcon, CatalogIcon } from "../../icons";
 function Header() {
   const navigate = useNavigate();
   const goCatalog = () => {
-    navigate("/");
+    navigate("/interior");
   };
   const goCart = () => {
-    navigate("/cart");
+    navigate("/interior/cart");
   };
   return (
     <>

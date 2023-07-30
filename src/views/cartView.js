@@ -79,7 +79,7 @@ function CartView() {
               Очистить корзину
             </button>
             <button
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/interior")}
               className="position__activeBtn-continue"
             >
               Продолжить покупки
